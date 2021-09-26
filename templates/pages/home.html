@@ -1,0 +1,658 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">VarTalk</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">
+                        <i class="fa fa-home nav__icon" aria-hidden="true"></i> Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class="fa fa-user-o nav__icon" aria-hidden="true"></i> About
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="fa fa-file nav__icon" aria-hidden="true"></i> Skills
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">
+                        <i class="fa fa-briefcase nav__icon" aria-hidden="true"></i> Services
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#blog" class="nav__link">
+                        <i class="fa fa-briefcase nav__icon" aria-hidden="true"></i> Blog
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="fa fa-picture-o nav__icon" aria-hidden="true"></i> Portfolio
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                        <i class="fa fa-paper-plane nav__icon" aria-hidden="true"></i> Contact me
+                    </a>
+                </li>
+            </ul>
+            <i class="fa fa-times nav__close" id="nav-close" aria-hidden="true"></i>
+        </div>
+
+        <div class="nav__btns">
+            <i class="fa fa-moon-o change-theme" aria-hidden="true" id="theme-button"></i>
+
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main class="main">
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <div class="home__img">
+                    <svg viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg" class="home__blob">
+                        <defs>
+                        <clipPath id="user-space" clipPathUnits="userSpaceOnUse">
+                            <path fill="#FF0066" d="M51.2,-64.5C63.5,-50.6,68.8,-31.8,72.8,-12.4C76.8,7.1,79.4,27.2,72.5,44.5C65.7,61.8,49.4,76.3,31,81.2C12.7,86.2,-7.7,81.6,-27.6,74.8C-47.4,68,-66.8,58.9,-75.2,43.7C-83.5,28.6,-80.8,7.4,-76.2,-12.5C-71.5,-32.3,-64.9,-50.8,-51.8,-64.6C-38.8,-78.4,-19.4,-87.5,0,-87.5C19.4,-87.5,38.8,-78.4,51.2,-64.5Z" transform="translate(95 100)" />
+                        </clipPath>
+                        </defs>
+
+                        <image class="home__blob-img" width="90%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="{% static 'images/background/abel1.jpeg' %}" clip-path="url(#user-space)"/>
+                    </svg>
+                </div>
+                 </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I'am Abel</h1>
+                    <h3 class="home__subtitle">Backend developer</h3>
+                    <p class="home__description">High level experience in web development knowledge, producing qulity work</p>
+                    <a href="#contact" class="button button--flex">
+                        Contact me  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+           
+
+            
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                    <span class="home__scroll-name">Scroll </span>
+                    <i class="fa fa-arrow-down home__scroll-arrow" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+       
+    </section>
+
+
+    <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+            <img src="{% static 'images/background/abel3.jpeg' %}" alt="" class="about__img">
+
+            <div class="about__data">
+                <p class="about__description">
+                    Web developer, with extensive knowledge and years of experiance
+                </p>
+
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title">03+</span>
+                        <span class="about__info-name">Years <br> experience</span>
+                    </div>
+                    <div>
+                        <span class="about__info-title">01+</span>
+                        <span class="about__info-name">Complete <br> project</span>
+                    </div>
+                    <div>
+                        <span class="about__info-title">00+</span>
+                        <span class="about__info-name">Companies <br> worked</span>
+                    </div>
+                </div>
+
+                <div class="about__buttons">
+                    <a download="" href="{% static 'images/background/abel1.jpeg' %}" class="button button--flex">
+                        Download CV<i class="fa fa-download button__icon" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills section" id="skills">
+        <h2 class="section__title">skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        <div class="skills__container container grid">
+            <div>
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="fa fa-code skills__icon" aria-hidden="true"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Front End developer</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+                        </div>
+
+                        <i class="fa fa-angle-down skills__arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">65%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Javascript</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="fa fa-server skills__icon" aria-hidden="true"></i>
+
+                        <div>
+                            <h1 class="skills__titles">BackEnd developer</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+                        </div>
+
+                        <i class="fa fa-angle-down skills__arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PYTHON</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PHP</h3>
+                                <span class="skills__number">75%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__php"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="fa fa-camera skills__icon" aria-hidden="true"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Designer</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+                        </div>
+
+                        <i class="fa fa-angle-down skills__arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Photshop</h3>
+                                <span class="skills__number">50%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__photoshop"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+            <div class="qualification__tabs">
+                <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <i class="fa fa-graduation-cap qualification__icon" aria-hidden="true"></i>
+                        Education
+                </div>
+                <div class="qualification__button button--flex"  data-target="#work">
+                    <i class="fa fa-briefcase qualification__icon" aria-hidden="true"></i>
+                        Work
+                </div>
+            </div>
+
+            <div class="qualification__sections">
+
+                <div class="qualification__content">
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Computer Programming</h3>
+                            <span class="qualification__subtitle">Teofilo Kisanji University</span>
+                            <div class="qualification__calender">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                2012-2015
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__title">Teacher(Math)</h3>
+                            <span class="qualification__subtitle">Mwanakianga Secondary School</span>
+                            <div class="qualification__calender">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                2017-now
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="qualification__content">
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Education in Math</h3>
+                            <span class="qualification__subtitle">Teofilo Kisanji University</span>
+                            <div class="qualification__calender">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                2012-2015
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                  
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What i offer</span>
+
+        <div class="services__container container grid">
+            <div class="services__content">
+                <div>
+                    <i class="fa fa-th-large services__icon" aria-hidden="true"></i>
+                    <h3 class="services__title">Ui<br> Designer</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link services__button">
+                    View More
+                    <i class="fa fa-arrow-right button__icon" aria-hidden="true"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <h4 class="services__modal-title">Ui <br> Designer</h4>
+                        <i class="fa fa-times services__modal-close" aria-hidden="true"></i>
+
+                        <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <i class="fa fa-check-circle-o service__modal-icon" aria-hidden="true"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+                            <li class="services__modal-service">
+                                <i class="fa fa-check-circle-o service__modal-icon" aria-hidden="true"></i>
+                                <p>Web page development.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services__content">
+                <div>
+                    <i class="fa fa-code services__icon" aria-hidden="true"></i>
+                    <h3 class="services__title">Frontend<br> Developer</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link services__button">
+                    View More
+                    <i class="fa fa-arrow-right button__icon" aria-hidden="true"></i>
+                </span>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <h4 class="services__modal-title">Frontend<br> Developer</h4>
+                        <i class="fa fa-times services__modal-close" aria-hidden="true"></i>
+
+                        <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <i class="fa fa-check-circle-o service__modal-icon" aria-hidden="true"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+                            <li class="services__modal-service">
+                                <i class="fa fa-check-circle-o service__modal-icon" aria-hidden="true"></i>
+                                <p>Web page development.</p>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portifolio__container  container swiper  swiper-container">
+            <div class="swiper-wrapper">
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="{% static 'images/portfolio1.png ' %}" class="portfolio__img"  alt="">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Social Blog(Instragram)</h3>
+                        <p class="portfolio__description">Adapted to all device, with ui components and suitable interaction</p>
+                        <a href="#" class="button button--flex button-small portfolio__button">
+                            Demo
+                            <i class="fa fa-arrow-right button__icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="{% static 'images/portfolio1.png ' %}" class="portfolio__img"  alt="">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">School Management System</h3>
+                        <p class="portfolio__description">Adapted to all device, with ui components and suitable interaction</p>
+                        <a href="#" class="button button--flex button-small portfolio__button">
+                            Demo
+                            <i class="fa fa-arrow-right button__icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="{% static 'images/portfolio1.png ' %}"  class="portfolio__img" alt="">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Inventory Management System</h3>
+                        <p class="portfolio__description">Adapted to all device, with ui components and suitable interaction</p>
+                        <a href="#" class="button button--flex button-small portfolio__button">
+                            Demo
+                            <i class="fa fa-arrow-right button__icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="fa fa-angle-right swiper-portifolio-icon" aria-hidden="true"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fa fa-angle-left swiper-portifolio-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="portfolio section" id="blog">
+        <h2 class="section__title">Blog</h2>
+        <span class="section__subtitle">Most recent Blog</span>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="{% static 'images/background/abel1.jpeg' %}" class="card__image" alt="">
+                <div class="card__content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
+                </div>
+                <div class="card__info">
+                    <div>
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>  310
+                    </div>
+
+                    <div>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i> 20
+                    </div>
+
+                    <div>
+                        <a href="#blog" class="card__link">view Article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'images/background/abel1.jpeg' %}" class="card__image" alt="">
+                <div class="card__content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
+                </div>
+                <div class="card__info">
+                    <div>
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>  310
+                    </div>
+
+                    <div>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i> 20
+                    </div>
+
+                    <div>
+                        <a href="#blog" class="card__link">view Article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'images/background/abel1.jpeg' %}" class="card__image" alt="">
+                <div class="card__content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
+                </div>
+                <div class="card__info">
+                    <div>
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>  310
+                    </div>
+
+                    <div>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i> 20
+                    </div>
+
+                    <div>
+                        <a href="#blog" class="card__link">view Article</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+   
+
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+            <div>
+                <div class="contact__information">
+                    <i class="fa fa-phone contact__icon" aria-hidden="true"></i>
+
+                    <div>
+                        <h3 class="contact__title">Call Me</h3>
+                        <span class="contact__subtitle">+255 620 469 580</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="fa fa-envelope contact__icon" aria-hidden="true"></i>
+
+                    <div>
+                        <h3 class="contact__title">Email Me</h3>
+                        <span class="contact__subtitle">abel.steven111@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="fa fa-map-marker contact__icon" aria-hidden="true"></i>
+
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Tanzania-Dodoma</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="" class="contact__form grid">
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Name</label>
+                        <input type="text" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Email</label>
+                        <input type="text" class="contact__input">
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <label for="" class="contact__label">Project</label>
+                    <input type="text" class="contact__input">
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Message</label>
+                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                </div>
+
+                <div>
+                    <a href="" class="button button--flex">
+                        Send Message
+                        <i class="fa fa-paper-plane-o button__icon" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">Abel</h1>
+                <span class="footer__subtitle">Frontend and Backend developer</span>
+            </div>
+
+            <ul class="footer__links">
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="footer__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="" class="footer__social" target="_blank">
+                    <i class="fa fa-facebook"  aria-hidden="true"></i>
+                </a>
+
+                <a href="" class="footer__social" target="_blank">
+                    <i class="fa fa-instagram"  aria-hidden="true"></i>
+                </a>
+
+                <a href="" class="footer__social" target="_blank">
+                    <i class="fa fa-twitter"  aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; VarTalk. All right reserved</p>
+    </div>
+</footer>
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="fa fa-arrow-up scrollup__icon" aria-hidden="true"></i>
+</a>
+
+
+{% endblock content %}
