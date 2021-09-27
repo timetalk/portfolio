@@ -421,7 +421,7 @@
         <div class="portifolio__container  container swiper  swiper-container">
             <div class="swiper-wrapper">
                 <div class="portfolio__content grid swiper-slide">
-                    <img src="{% static 'images/portfolio1.png ' %}" class="portfolio__img"  alt="">
+                    <img src="{% static 'images/portfolio1.png' %}" class="portfolio__img"  alt="">
 
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">Social Blog(Instragram)</h3>
@@ -434,7 +434,7 @@
                 </div>
 
                 <div class="portfolio__content grid swiper-slide">
-                    <img src="{% static 'images/portfolio1.png ' %}" class="portfolio__img"  alt="">
+                    <img src="{% static 'images/portfolio1.png' %}" class="portfolio__img"  alt="">
 
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">School Management System</h3>
@@ -447,7 +447,7 @@
                 </div>
 
                 <div class="portfolio__content grid swiper-slide">
-                    <img src="{% static 'images/portfolio1.png ' %}"  class="portfolio__img" alt="">
+                    <img src="{% static 'images/portfolio1.png' %}"  class="portfolio__img" alt="">
 
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">Inventory Management System</h3>
@@ -471,72 +471,34 @@
  
     <section class="portfolio section" id="blog">
         <h2 class="section__title">Blog</h2>
-        <span class="section__subtitle">Most recent Blog</span>
+        <span class="section__subtitle">Most Recent Post</span>
+        
 
         <div class="cards">
 
-            <div class="card">
-                <img src="{% static 'images/background/abel1.jpeg' %}" class="card__image" alt="">
-                <div class="card__content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
-                </div>
-                <div class="card__info">
-                    <div>
-                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>  310
+            {% for post in posts %}
+                <div class="card">
+                    <img src="{{post.image.url}}" class="card__image" alt="">
+                    <span class="section__title">{{post.title}}</span>
+                    <div class="card__content">
+                        <p>{{post.content}}</p>
                     </div>
+                    <div class="card__info">
+                        <div>
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>  310
+                        </div>
 
-                    <div>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i> 20
-                    </div>
+                        <div>
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i> 20
+                        </div>
 
-                    <div>
-                        <a href="#blog" class="card__link">view Article</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="{% static 'images/background/abel1.jpeg' %}" class="card__image" alt="">
-                <div class="card__content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
-                </div>
-                <div class="card__info">
-                    <div>
-                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>  310
-                    </div>
-
-                    <div>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i> 20
-                    </div>
-
-                    <div>
-                        <a href="#blog" class="card__link">view Article</a>
+                        <div>
+                            <a href="#blog" class="card__link">view Article</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="{% static 'images/background/abel1.jpeg' %}" class="card__image" alt="">
-                <div class="card__content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ut?</p>
-                </div>
-                <div class="card__info">
-                    <div>
-                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>  310
-                    </div>
-
-                    <div>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i> 20
-                    </div>
-
-                    <div>
-                        <a href="#blog" class="card__link">view Article</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+            
 
         </div>
     </section>

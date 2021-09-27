@@ -8,9 +8,10 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+    path('api/', include('blog.api.urls')),
 ]
 
-urlpatterns+=static(settings.STATIC_URL, static_root=settings.STATIC_ROOT)
-urlpatterns+=static(settings.MEDIA_URL, static_root=settings.MEDIA_ROOT)
+urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
